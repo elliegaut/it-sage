@@ -11,20 +11,27 @@ html {
 /* ---------------Global Styles----------------- */
 body {
   font-family: "Merriweather", serif;
-  background-color:rgb(97, 61, 33)
+  background-color:#101240
 }
 main {
-  background-color: rgb(233, 225, 213);
+  background-color:#fff;
   width:80vw;
   margin:40px auto; 
-  border: 4px solid ;
+  border: 4px solid #0a96a6;
   border-radius: 4px;
 }
 
 header.primary{
 background-color: #8fbdd9;
 background-image: url("https://assets.codepen.io/7248/bg_1.png");  
-padding:20px;  
+padding:20px; 
+display:flex;  
+flex-direction:row; 
+border-bottom:3px solid #104d73;  
+}
+
+header.primary .hgroup{
+  width: 70%;
 }
 
 header.primary h1{
@@ -32,13 +39,51 @@ header.primary h1{
 }
 
 header.primary h1 a{
-  color:#ffffff
+  color:#ffffff;
   text-decoration:none;
-  text-shadow: 1px 1px #000;
+  text-shadow:1px 1px #000;
+  font-size: 2.6rem;
+  font-weight:normal;
 }
 
-header.primary h2 a{
-  color:#fff
-  text-shadow: 1px 1px #000;
+header.primary h2{
+  color:#fff;
+  text-shadow:1px 1px #000;
   margin:0;
+  font-size: 1.8rem;
+  font-weight:normal;
+}
+
+header.primary nav{
+  width:30%;
+  color:white;
+}
+
+header.primary nav ul{
+list-style-type: none;
+margin:0;
+padding:0;
+}
+
+header.primary nav ul li{
+margin-bottom:10px;
+}
+
+header.primary nav a{
+ display:block; 
+ color:#ffffff; 
+ text-decoration:none;
+ border: 1px solid #cc3a67;
+ border-right: 10px solid #cc3a67;
+ padding:10px;
+ background-color:#000000;
+ background-color:rgba(0,0,0,.6);
+ text-align:right;
+ border-radius:20px 0 20px 0; 
+ transition:.5s
+}
+
+header.primary nav a:hover{
+  text-decoration:underline;
+  background-color:rgba(0,0,0,1);
 }
