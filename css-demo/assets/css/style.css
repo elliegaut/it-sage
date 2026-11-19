@@ -8,6 +8,17 @@ html {
   box-sizing: inherit;
 }
 
+/* ---------------Utility Styles----------------- */
+
+.container{
+  margin:0;
+  padding: 20px;
+}
+
+
+
+
+
 /* ---------------Global Styles----------------- */
 body {
   font-family: "Merriweather", serif;
@@ -86,4 +97,16 @@ header.primary nav a{
 header.primary nav a:hover{
   text-decoration:underline;
   background-color:rgba(0,0,0,1);
+}
+
+
+#content {
+line-height: 1.4;
+}
+
+#content h2, #content h3{
+  color:#161a59;
+  border-left: 7.5px solid #d94179;
+  border-radius: 15px 0;
+  padding:7.5px;
 }
